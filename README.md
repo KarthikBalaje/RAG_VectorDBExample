@@ -224,21 +224,41 @@ What you should notice:
 
 ## Sample Data
 
-The sample dataset contains 20 short documents across 4 categories:
+The sample dataset contains **50 documents** across 2 categories:
 
-- Space
-- Animals
-- Cooking
-- Technology
+- Cars 🚗
+- Bikes 🚲
+
+Each document represents a specific concept such as:
+- Electric Vehicles
+- Fuel Efficiency
+- Mountain Bikes
+- Bike Maintenance
+- Hybrid Technology
+- Safety Systems
 
 Each document includes:
 
-- `id`
-- `text`
-- `metadata.title`
-- `metadata.category`
-- `metadata.source`
-- `metadata.year`
+- `id` → unique identifier (e.g., `car_001`, `bike_001`)
+- `text` → descriptive content of the topic
+- `metadata.title` → document title
+- `metadata.category` → Cars or Bikes
+- `metadata.source` → source label (demo purpose)
+- `metadata.year` → reference year
+
+Example:
+
+```python
+{
+    "id": "car_001",
+    "text": "Electric vehicles (EVs) are revolutionizing the automotive industry...",
+    "metadata": {
+        "title": "Electric Vehicles",
+        "category": "Cars",
+        "source": "EV Today",
+        "year": 2023
+    }
+}
 
 This makes the demo useful for:
 
